@@ -7,7 +7,7 @@ services:
       # Install dependencies
       commands:
         - apt-get update && apt-get install -y gcc python3 python3-pip
-        - pip3 install -r requirements.txt
+        - pip install -r requirements.txt
         - gcc soul.c -o soul_c.out  # Compile the C file
     run:
       command: python3 soul.py  # Run the Python script
